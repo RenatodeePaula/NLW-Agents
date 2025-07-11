@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./script.js" defer></script>
+
+<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logo Espots Nlw" />
+    </header>
+
+    <main>
+      <section>
+        <div>
+            <h2>Assistente de Meta</h2>
+            <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+            
+            <form>
+               <div>
+                 <input id="apiKey" type="password" placeholder="Informa a API KEY do Gemini">
+                
+                <select id="gameSelect">
+                    <option value="">Selecione um jogo</option>
+                    <option value="valorant">Valorant</option>
+                    <option value="lol">League Of Legends</option>
+                    <option value="cs">CS Go</option>
+                </select>
+
+               </div>
+                <input id="questionInput" class="prompt" type="text" placeholder="EX: Melhor build para ADC ..." >
+                <button id="askButton">
+                    Perguntar
+                </button>
+            </form>
+            
+            <div class="hidden" id="aiResponse">
+                <div class="response-content">
+
+                </div>
+            </div>
+
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
