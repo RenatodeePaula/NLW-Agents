@@ -72,7 +72,7 @@ const perguntarIA = async (question, game, apiKey) => {
 
 const enviarFormulario = async (event) => {
   event.preventDefault();
-  const apiKey = apiKeyInput.value;
+  const apiKey = 'AIzaSyD8zKr5ja44qwMm7UqGm03HAg06CIuJRnQ';
   const game = gameSelect.value;
   const question = questionInput.value;
 
